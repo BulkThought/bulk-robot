@@ -1,8 +1,8 @@
 # bulk-robot
 
 ## important for bulk friends: 
-bulk-robot is a chat bot built on the [Hubot][hubot] framework. It's built to use 
-the adapter here: [gitter2 adapter][https://github.com/huafu/hubot-gitter2].
+bulk-robot is a chat bot built on the hubot framework. It's built to use 
+the adapter here: [gitter2 adapter](https://github.com/huafu/hubot-gitter2).
 
 It's initally configured to be deployed on Heroku but I haven't done that yet
 partially because the heroku config var setting seems to be breaking the adapter.
