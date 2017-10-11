@@ -28,7 +28,7 @@ You can test your hubot by running the following, however some plugins will not
 behave as expected unless the [environment variables](#configuration) they rely
 upon have been set.
 
-You can start bulkbot locally by running:
+You can start bulk-robot locally by running:
 
     % bin/hubot
 
@@ -37,7 +37,7 @@ You'll see some start up output and a prompt:
     [Sat Feb 28 2015 12:38:27 GMT+0000 (GMT)] INFO Using default redis on localhost:6379
     bulk-robot>
 
-Then you can interact with bulkbot by typing `bulkbot help`.
+Then you can interact with bulk-robot by typing `bulkbot help`.
 
     bulk-robot> bulk-robot help
     bulk-robot animate me <query> - The same thing as `image me`, except adds [snip]
