@@ -5,17 +5,17 @@
   "author": "bulkbot <bulkb8t@gmail.com>",
   "description": "one bulk bot to rule them all",
   "dependencies": {
-    "hubot": "^2.19.0",
+    "hubot": "2.19.0",
     "hubot-ambush": "0.0.3",
     "hubot-diagnostics": "0.0.2",
-    "hubot-gitter2": "^0.1.3",
-    "hubot-help": "^0.2.2",
-    "hubot-heroku-keepalive": "^1.0.3",
+    "hubot-gitter2": "0.1.3",
+    "hubot-help": "0.2.2",
+    "hubot-heroku-keepalive": "1.0.3",
     "hubot-maps": "0.0.3",
     "hubot-redis-brain": "0.0.4",
-    "hubot-scripts": "^2.17.2",
-    "hubot-shipit": "^0.2.1",
-    "hubot-tell": "*"
+    "hubot-scripts": "2.17.2",
+    "hubot-shipit": "0.2.1",
+    "hubot-tell": "1.2.4"
   },
   "engines": {
     "node": "0.10.x"
