@@ -10,4 +10,4 @@ module.exports = (robot) ->
   ]
 
   robot.hear /pong/i, (res) ->
-    res.send "#{res.random pongResponse}""
+    res.send "#{res.random pongResponse}"

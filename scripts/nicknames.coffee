@@ -1,9 +1,10 @@
-## Configure roles for set/remove other people nicknames
-#roles = false
-#if process.env.HUBOT_NICKNAME_ROLES 
-#  roles = ['admin']
-#  newRoles = process.env.HUBOT_NICKNAME_ROLES.split ','
-#  roles.push role for role in newRoles when role not in roles
+# Description:
+#    Configure roles for set/remove other people nicknames
+#    roles = false
+#    if process.env.HUBOT_NICKNAME_ROLES
+#      roles = ['admin']
+#      newRoles = process.env.HUBOT_NICKNAME_ROLES.split ','
+#      roles.push role for role in newRoles when role not in roles
 
 module.exports = (robot) ->
   verifyUser = (res) ->
@@ -36,7 +37,7 @@ module.exports = (robot) ->
     return true
 
 
-  robot.respond /my nickname is (.+)/i, (res) ->    
+  robot.respond /my nickname is (.+)/i, (res) ->
     if nick = verifyNickname res
       res.reply "Okay! I'll call you #{nick} from now on!"
       res.envelope.user.nickname = nick
@@ -45,14 +46,14 @@ module.exports = (robot) ->
   robot.respond /(?:give me|tell me|show me|what is)?\s*my nickname\s*.?$/i, (res) ->
     if nick = res.envelope.user.nickname
       res.reply "Your nickname is #{nick}!"
-    else 
+    else
       res.reply "You don't have one, yet!"
 
 
   robot.respond /(?:I (?:don.?t|do not) (?:like|want)|forget) my nickname\s*.?$/i, (res) ->
     if nick = res.envelope.user.nickname
       res.send "Ok #{nick}! That was the last time I call you like that ;)"
-    else 
+    else
       res.reply "That's fine. You don't have a nickname anyway!"
     delete res.envelope.user.nickname
 
@@ -69,7 +70,7 @@ module.exports = (robot) ->
     if user = verifyUser res
       if nick = user.nickname
         res.reply "The nickname of #{user.name} is #{nick}!"
-      else 
+      else
         res.reply "#{user.name} doesn't have one, yet ;)"
 
 
@@ -79,5 +80,5 @@ module.exports = (robot) ->
         if nick = user.nickname
           res.reply "Okay! #{user.name} is no longer known as #{nick}!"
           delete user.nickname
-        else 
+        else
           res.reply "#{user.name} doesn't have one, yet ;)"
