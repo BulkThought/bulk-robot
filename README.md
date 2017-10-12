@@ -37,7 +37,7 @@ You'll see some start up output and a prompt:
     [Sat Feb 28 2015 12:38:27 GMT+0000 (GMT)] INFO Using default redis on localhost:6379
     bulk-robot>
 
-Then you can interact with bulk-robot by typing `bulkbot help`.
+Then you can interact with bulk-robot by typing `bulk-robot help`.
 
     bulk-robot> bulk-robot help
     bulk-robot animate me <query> - The same thing as `image me`, except adds [snip]
