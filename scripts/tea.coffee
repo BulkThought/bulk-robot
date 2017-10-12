@@ -3,5 +3,5 @@
 #
 
 module.exports = (robot) ->   
-   robot.hear /tea/i, (res) ->
+   robot.hear /tea\b/i, (res) ->
      res.send "if only I were a :tea: making robot"
